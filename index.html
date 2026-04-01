@@ -31,8 +31,35 @@
         header {
             text-align: center;
             margin-bottom: 50px;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
             border-bottom: 1px solid #333;
+            position: relative;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .home-btn {
+            background: transparent;
+            color: var(--primary-mint);
+            border: 1px solid var(--primary-mint);
+            padding: 8px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .home-btn:hover {
+            background: var(--primary-mint);
+            color: #000;
+            box-shadow: 0 0 15px var(--primary-mint);
         }
 
         h1 {
@@ -171,6 +198,9 @@
 
 <div class="container">
     <header>
+        <div class="nav-container">
+            <a href="https://umeraio.github.io/Tools-Downloads/" class="home-btn">← Back to Home</a>
+        </div>
         <h1>Microsoft Word Customization</h1>
         <p>A Comprehensive Roadmap for Environment Migration</p>
     </header>
