@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umer Malik | Word Customization Roadmap</title>
+    <style>
+        :root {
+            --bg-color: #0f1111;
+            --card-bg: #1e2124;
+            --primary-mint: #00ffc2;
+            --text-main: #e0e0e0;
+            --text-dim: #95a5a6;
+            --accent-gold: #f1c40f;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: var(--primary-mint);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .intro-section {
+            background: rgba(0, 255, 194, 0.03);
+            border: 1px solid rgba(0, 255, 194, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .intro-section h2 {
+            margin-top: 0;
+            color: var(--primary-mint);
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            border-left: 5px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .section-card:hover {
+            border-left-color: var(--primary-mint);
+            transform: scale(1.01);
+        }
+
+        h2 {
+            color: var(--primary-mint);
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #444;
+            display: inline-block;
+        }
+
+        .step-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .step-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .step-list li::before {
+            content: "•";
+            color: var(--primary-mint);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .command-area {
+            background: #000;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            border: 1px solid #333;
+        }
+
+        code {
+            font-family: 'Consolas', 'Monaco', monospace;
+            color: #ff79c6;
+            font-size: 1.1rem;
+        }
+
+        .copy-btn {
+            background: var(--primary-mint);
+            color: #000;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: #fff;
+            box-shadow: 0 0 15px var(--primary-mint);
+        }
+
+        kbd {
+            background: #444;
+            border-radius: 3px;
+            border: 1px solid #555;
+            box-shadow: 0 2px 0 #000;
+            color: #fff;
+            padding: 2px 6px;
+            font-family: inherit;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 50px 0;
+            color: var(--text-dim);
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box {
+            background: #252a2e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border-left: 3px solid var(--accent-gold);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Microsoft Word Customization</h1>
+        <p>A Comprehensive Roadmap for Environment Migration</p>
+    </header>
+
+    <div class="intro-section">
+        <h2>Introduction</h2>
+        <p>This guide serves as a comprehensive roadmap for anyone looking to secure or move their Microsoft Word workflow to a new computer. The primary benefit of this guide is to save you hours of repetitive work by preserving your personal automation scripts (Macros) and your personalized workspace layout (Ribbon and Quick Access Toolbar). By following these steps, you can ensure your productivity tools remain intact, regardless of hardware changes or software reinstalls.</p>
+    </div>
+
+    <div class="section-card">
+        <h2>Part 1: How to Create and Manage Macros (The Basics)</h2>
+        <p>Before backing up, you need to know how to access the internal world of Word automation.</p>
+
+        <h3>1. Inserting a New Macro</h3>
+        <ul class="step-list">
+            <li>Open <strong>Microsoft Word</strong>.</li>
+            <li>Press <kbd>Alt + F11</kbd> to open the <strong>Visual Basic for Applications (VBA) Editor</strong>.</li>
+            <li>In the left-hand sidebar, right-click on <strong>Normal</strong>, select <strong>Insert</strong>, and then click <strong>Module</strong>.</li>
+            <li>Paste your macro code into the window. Click <strong>Save</strong> and close the editor.</li>
+        </ul>
+
+        <h3>2. Running a Macro</h3>
+        <ul class="step-list">
+            <li>Simply press <kbd>Alt + F8</kbd> on your keyboard.</li>
+            <li>Select the desired macro from the list and click <strong>Run</strong>.</li>
+        </ul>
+
+        <h3>3. Renaming and Organizing</h3>
+        <ul class="step-list">
+            <li>Press <kbd>Alt + F11</kbd> and look at the <strong>Properties</strong> window (bottom-left).</li>
+            <li>Find the box labeled <strong>(Name)</strong> and type your new name.</li>
+            <li><small>Note: Use underscores instead of spaces (e.g., <code>My_New_Macro</code>).</small></li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Part 2: Adding Macros to the Ribbon</h2>
+        <p>Make your macros easily accessible as buttons within <strong>Microsoft Word</strong>.</p>
+        <ul class="step-list">
+            <li>Right-click any tab on the Ribbon and select <strong>Customize the Ribbon</strong>.</li>
+            <li>On the right side, click <strong>New Group</strong> (under a tab like 'Home' or 'View').</li>
+            <li>On the left dropdown ("Choose commands from"), select <strong>Macros</strong>.</li>
+            <li>Find your macro and click <strong>Add</strong> to move it to your New Group.</li>
+            <li><strong>To change the icon:</strong> Highlight your macro in the right-hand box and click <strong>Rename</strong>. Select an icon from the popup and click <strong>OK</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Part 3: Backing Up Your Macros</h2>
+        <h3>1. Locate the Template Folder</h3>
+        <ul class="step-list">
+            <li>Press <kbd>Win + R</kbd> and copy/paste:
+                <div class="command-area">
+                    <code id="cmd1">%AppData%\Microsoft\Templates</code>
+                    <button class="copy-btn" onclick="copyText('cmd1')">COPY</button>
+                </div>
+            </li>
+        </ul>
+        <h3>2. Copy the File</h3>
+        <ul class="step-list">
+            <li>Copy the <strong>Normal.dotm</strong> file to your USB or OneDrive.</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Part 4: Backing Up Ribbon Customizations</h2>
+        <ul class="step-list">
+            <li>Open Word -> Right-click Ribbon -> <strong>Customize the Ribbon</strong>.</li>
+            <li>Click <strong>Import/Export</strong> (bottom right).</li>
+            <li>Choose <strong>Export all customizations</strong> and save the <code>.exportedUI</code> file.</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>Part 5: Restoring on a New PC</h2>
+        <div class="highlight-box">
+            <strong>Important:</strong> Close Microsoft Word completely before restoring files.
+        </div>
+        <h3>1. Restore Macros</h3>
+        <ul class="step-list">
+            <li>Navigate to the templates folder:
+                <div class="command-area">
+                    <code id="cmd2">%AppData%\Microsoft\Templates</code>
+                    <button class="copy-btn" onclick="copyText('cmd2')">COPY</button>
+                </div>
+            </li>
+            <li>Paste your <strong>Normal.dotm</strong> and click <strong>Replace</strong>.</li>
+        </ul>
+        <h3>2. Restore the Ribbon</h3>
+        <ul class="step-list">
+            <li>Open Word -> Customize Ribbon -> Import/Export -> <strong>Import customization file</strong>.</li>
+            <li>Select your <code>.exportedUI</code> file and confirm with <strong>Yes</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        ***Umer Malik: Where Craft Meets Research***
+    </div>
+</div>
+
+<script>
+    function copyText(id) {
+        const text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.querySelector(`button[onclick*="${id}"]`);
+            const oldText = btn.innerText;
+            btn.innerText = "COPIED!";
+            btn.style.background = "#fff";
+            setTimeout(() => {
+                btn.innerText = oldText;
+                btn.style.background = "#00ffc2";
+            }, 2000);
+        });
+    }
+</script>
+
+</body>
+</html>
